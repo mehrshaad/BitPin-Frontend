@@ -1,13 +1,11 @@
-import { useState } from "react";
 import "./Assets/Styles/App.scss";
+import Router from "./Routes/index";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>Ali Dadashzadeh</div>
-    </>
+    <div dir="rtl">
+      <Router />
+    </div>
   );
 }
 
