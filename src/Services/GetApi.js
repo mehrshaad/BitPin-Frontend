@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { filterByCurrency2 } from "../Utils/DataPreprocess";
 const API_BASE_URL = "https://api.bitpin.org/v1/mkt/markets/"; // Replace with your actual API base URL
 
 const getApi = axios.create({
@@ -11,11 +11,13 @@ const getApi = axios.create({
   },
 });
 
-export const fetchData = async () => {
+export const fetchData = async (currency='IRT') => {
   const response = await getApi
     .get()
-    .then((response) => response)
+    .then((response) => response.data)
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+  const filteredData = await filterByCurrency2(response.results, currency);
+  return filteredData;
 };

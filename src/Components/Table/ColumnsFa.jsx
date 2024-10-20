@@ -9,41 +9,41 @@ const ColumnsFa = [
     key: "title",
     width: 500,
     align: "center",
-    render: (_, record) => (
-      <>
-        <Row>
-          <Col>
-            {record.image ? (
-              <img
-                src={record.image}
-                alt=""
-                style={{
-                  width: "var(--table-icon-size)",
-                  height: "var(--table-icon-size)",
-                }}
-              />
-            ) : (
-              <img
-                src={notFound}
-                alt=""
-                style={{
-                  width: "var(--table-icon-size)",
-                  height: "var(--table-icon-size)",
-                }}
-              />
-            )}
-          </Col>
-          <Col>
-            <Row>
-              <Col span={24}>col</Col>
-            </Row>
-            <Row>
-              <Col span={24}>col</Col>
-            </Row>
-          </Col>
-        </Row>
-      </>
-    ),
+    // render: (_, record) => (
+    //   <>
+    //     <Row>
+    //       <Col>
+    //         {record.image ? (
+    //           <img
+    //             src={record.image}
+    //             alt=""
+    //             style={{
+    //               width: "var(--table-icon-size)",
+    //               height: "var(--table-icon-size)",
+    //             }}
+    //           />
+    //         ) : (
+    //           <img
+    //             src={notFound}
+    //             alt=""
+    //             style={{
+    //               width: "var(--table-icon-size)",
+    //               height: "var(--table-icon-size)",
+    //             }}
+    //           />
+    //         )}
+    //       </Col>
+    //       <Col>
+    //         <Row>
+    //           <Col span={24}>col</Col>
+    //         </Row>
+    //         <Row>
+    //           <Col span={24}>col</Col>
+    //         </Row>
+    //       </Col>
+    //     </Row>
+    //   </>
+    // ),
   },
   {
     title: "Name",

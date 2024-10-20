@@ -2,7 +2,7 @@ import "animate.css";
 import { InfinitySpin } from "react-loader-spinner";
 import "./MdLoader.scss";
 
-function MdLoader({ loadText }) {
+function MdLoader({ loadText = "درحال بارگذاری دیتا" }) {
   return (
     <div className="loader animate__animated animate__fadeIn">
       <h2>
