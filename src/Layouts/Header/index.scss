@@ -6,21 +6,31 @@
   vertical-align: middle;
 }
 
-.name {
-  cursor: pointer;
-  background-color: transparent;
-  border-bottom: 2px solid transparent;
-  color: var(--secondary-text-color);
-  background: var(--primary-text-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s;
+.title {
+  font-weight: 800;
+  border-bottom: 10px solid rgba(192, 212, 191, 0.6);
+  border-radius: 4px;
+}
 
-  &:hover {
-    border-color: var(--footer-text-span-color);
+.info {
+  color: var(--passive-text-color);
+
+  .name {
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    color: var(--secondary-text-color);
+    background: var(--primary-text-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: var(--secondary-text-color);
+    }
   }
 }
