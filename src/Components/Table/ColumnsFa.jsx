@@ -1,5 +1,6 @@
 import { Button, Col, Row } from "antd";
 import images from "../../Assets/image.svg";
+import { queryByRecord } from "../../Utils/QueryProcess";
 
 const ColumnsFa = [
   {
@@ -64,7 +65,16 @@ const ColumnsFa = [
     dataIndex: "buy",
     key: "buy",
     width: "1%",
-    render: (buy) => <Button type="primary">خرید / فروش</Button>,
+    render: (_, record) => (
+      <Button
+        onClick={() => {
+          window.location.href = `/trade?record=${queryByRecord(record)}`;
+        }}
+        type="primary"
+      >
+        خرید / فروش
+      </Button>
+    ),
   },
 ];
 

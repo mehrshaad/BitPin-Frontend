@@ -13,7 +13,7 @@ function MdLoader({ loadText = "درحال بارگذاری دیتا" }) {
           ariaLabel="infinity-spin-loading"
         />
       </h2>
-      <h2>{loadText}</h2>
+      {/* <h2>{loadText}</h2> */}
     </div>
   );
 }
