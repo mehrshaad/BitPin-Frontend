@@ -1,7 +1,6 @@
-import { Grid } from "antd";
-import { Col, Row } from "antd";
-import notFound from "../../Assets/not-found.svg";
+import { Button, Col, Row } from "antd";
 import images from "../../Assets/image.svg";
+
 const ColumnsFa = [
   {
     title: "نام رمز ارز",
@@ -9,56 +8,67 @@ const ColumnsFa = [
     key: "title",
     width: 500,
     align: "center",
-    // render: (_, record) => (
-    //   <>
-    //     <Row>
-    //       <Col>
-    //         {record.image ? (
-    //           <img
-    //             src={record.image}
-    //             alt=""
-    //             style={{
-    //               width: "var(--table-icon-size)",
-    //               height: "var(--table-icon-size)",
-    //             }}
-    //           />
-    //         ) : (
-    //           <img
-    //             src={notFound}
-    //             alt=""
-    //             style={{
-    //               width: "var(--table-icon-size)",
-    //               height: "var(--table-icon-size)",
-    //             }}
-    //           />
-    //         )}
-    //       </Col>
-    //       <Col>
-    //         <Row>
-    //           <Col span={24}>col</Col>
-    //         </Row>
-    //         <Row>
-    //           <Col span={24}>col</Col>
-    //         </Row>
-    //       </Col>
-    //     </Row>
-    //   </>
-    // ),
+    render: (_, record) => (
+      <>
+        <Row className="name-col">
+          <Col className="coin-icon">
+            {record.currency1.image ? (
+              <img src={record.currency1.image} alt="" />
+            ) : (
+              <img src={images} alt="" />
+            )}
+          </Col>
+          <Col>
+            <Row>
+              <Col span={24} className="coin-title">
+                {record.currency1.title_fa}
+              </Col>
+            </Row>
+            <Row>
+              <Col span={24} className="coin-dets">
+                {record.currency1.code} / {record.currency2.code}
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </>
+    ),
   },
   {
-    title: "Name",
-    dataIndex: "title",
-    key: "title",
+    title: "آخرین قیمت",
+    dataIndex: "price_info",
+    key: "price_info",
+    render: (price_info, record) => (
+      <span dir="ltr">
+        {parseFloat(price_info.price).toLocaleString()} {record.currency2.code}
+      </span>
+    ),
   },
   {
-    title: "Age",
-    dataIndex: "age",
-    key: "age",
+    title: "تغییرات",
+    dataIndex: "price_info",
+    key: "price_info",
+    render: (price_info) =>
+      parseFloat(price_info.change) > 0 ? (
+        <span className="possitive" dir="ltr">
+          {parseFloat(price_info.change)}%
+        </span>
+      ) : (
+        <span className="negative" dir="ltr">
+          {parseFloat(price_info.change)}%
+        </span>
+      ),
   },
   {
-    title: "Address",
-    dataIndex: "address",
-    key: "address",
+    title: "",
+    dataIndex: "buy",
+    key: "buy",
+    width: "1%",
+    render: (buy) => (
+      <Button type="primary">
+        خرید / فروش
+      </Button>
+    ),
   },
 ];
 

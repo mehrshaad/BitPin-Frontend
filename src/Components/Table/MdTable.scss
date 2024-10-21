@@ -1,1 +1,35 @@
 @import "../../Assets/styles/variables.css";
+
+.name-col {
+    .coin-icon {
+        img {
+            height: var(--table-icon-size);
+            width: var(--table-icon-size);
+        }
+    }
+
+    .coin-title {
+        font-size: 1rem;
+        color: var(--primary-text-color);
+        font-weight: 700;
+    }
+
+    .coin-dets {
+        font-size: 0.8rem;
+        color: var(--passive-text-color);
+        font-weight: 500;
+    }
+}
+.ant-table{
+    width: 70vw;
+}
+
+.possitive {
+    color: #237804;
+    font-weight: 600;
+}
+
+.negative {
+    font-weight: 600;
+    color: #cf1322;
+}

@@ -1,0 +1,17 @@
+@import "../../Assets/Styles/variables.css";
+
+.layout {
+  background-color: transparent;
+  height: max-content;
+  border-radius: 20px !important;
+}
+
+.header{
+  background-color: transparent;
+}
+
+.content {
+  // padding: 50px calc(3vw + 20px);
+  padding-top: 130px;
+  z-index: 2;
+}

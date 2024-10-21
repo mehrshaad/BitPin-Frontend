@@ -1,0 +1,21 @@
+@import "../../Assets/Styles/variables.css";
+
+
+.name {
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  color: var(--secondary-text-color);
+  background: var(--primary-text-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: var(--footer-text-span-color);
+  }
+}

@@ -1,7 +1,8 @@
 :root {
   --primary-background-color: rgb(255, 255, 255);
   --primary-text-color: rgb(0, 0, 0);
-  --passive-text-color: rgb(224, 224, 224);
-  --secondary-text-color: #00bfa6;
+  --passive-text-color: rgb(128, 128, 128);
+  --secondary-text-color: #389e0d;
+  --secondary-text-color-light: #95de64;
   --table-icon-size: 23px;
 }

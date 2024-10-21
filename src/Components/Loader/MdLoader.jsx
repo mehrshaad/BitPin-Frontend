@@ -9,7 +9,7 @@ function MdLoader({ loadText = "درحال بارگذاری دیتا" }) {
         <InfinitySpin
           visible={true}
           width="200"
-          color="var(--secondary-text-color)"
+          color="var(--secondary-text-color-light)"
           ariaLabel="infinity-spin-loading"
         />
       </h2>

@@ -6,26 +6,26 @@ const Columns = [
     dataIndex: "image",
     key: "image",
     align: "center",
-    render: (image) =>
-      image ? (
-        <img
-          src={image}
-          alt=""
-          style={{
-            width: "var(--table-icon-size)",
-            height: "var(--table-icon-size)",
-          }}
-        />
-      ) : (
-        <img
-          src={notFound}
-          alt=""
-          style={{
-            width: "var(--table-icon-size)",
-            height: "var(--table-icon-size)",
-          }}
-        />
-      ),
+    // render: (image) =>
+    //   image ? (
+    //     <img
+    //       src={image}
+    //       alt=""
+    //       style={{
+    //         width: "var(--table-icon-size)",
+    //         height: "var(--table-icon-size)",
+    //       }}
+    //     />
+    //   ) : (
+    //     <img
+    //       src={notFound}
+    //       alt=""
+    //       style={{
+    //         width: "var(--table-icon-size)",
+    //         height: "var(--table-icon-size)",
+    //       }}
+    //     />
+    //   ),
   },
   {
     title: "Name",

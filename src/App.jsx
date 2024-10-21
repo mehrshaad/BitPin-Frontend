@@ -1,11 +1,15 @@
 import "./Assets/Styles/App.scss";
-import Router from "./Routes/index";
+import Config from "./Config";
+import Layout from "./Layouts/Layout";
+import Router from "./Routes";
 
 function App() {
   return (
-    <div dir="rtl">
-      <Router />
-    </div>
+    <Config>
+      <Layout dir="rtl">
+        <Router />
+      </Layout>
+    </Config>
   );
 }
 
