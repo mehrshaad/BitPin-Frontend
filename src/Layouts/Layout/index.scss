@@ -3,15 +3,18 @@
 .layout {
   background-color: transparent;
   height: max-content;
-  border-radius: 20px !important;
 }
 
-.header{
+.header {
   background-color: transparent;
+  z-index: 3;
 }
 
 .content {
-  // padding: 50px calc(3vw + 20px);
   padding-top: 130px;
   z-index: 2;
+
+  @media screen and (max-width: 720px) {
+    padding-top: 200px;
+  }
 }

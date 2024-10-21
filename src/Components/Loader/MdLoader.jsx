@@ -4,7 +4,7 @@ import "./MdLoader.scss";
 
 function MdLoader({ loadText = "درحال بارگذاری دیتا" }) {
   return (
-    <div className="loader animate__animated animate__fadeIn">
+    <div className="loader">
       <h2>
         <InfinitySpin
           visible={true}

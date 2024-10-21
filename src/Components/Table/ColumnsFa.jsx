@@ -6,11 +6,10 @@ const ColumnsFa = [
     title: "نام رمز ارز",
     dataIndex: "title",
     key: "title",
-    width: 500,
-    align: "center",
+    width: 250,
     render: (_, record) => (
       <>
-        <Row className="name-col">
+        <Row className="name-col" gutter={[16, 16]}>
           <Col className="coin-icon">
             {record.currency1.image ? (
               <img src={record.currency1.image} alt="" />
@@ -19,12 +18,12 @@ const ColumnsFa = [
             )}
           </Col>
           <Col>
-            <Row>
+            <Row justify="start" align="middle">
               <Col span={24} className="coin-title">
                 {record.currency1.title_fa}
               </Col>
             </Row>
-            <Row>
+            <Row justify="start" align="middle">
               <Col span={24} className="coin-dets">
                 {record.currency1.code} / {record.currency2.code}
               </Col>
@@ -40,7 +39,8 @@ const ColumnsFa = [
     key: "price_info",
     render: (price_info, record) => (
       <span dir="ltr">
-        {parseFloat(price_info.price).toLocaleString()} {record.currency2.code}
+        <b>{parseFloat(price_info.price).toLocaleString()}</b>{" "}
+        <span className="currency">{record.currency2.code}</span>
       </span>
     ),
   },
@@ -64,11 +64,7 @@ const ColumnsFa = [
     dataIndex: "buy",
     key: "buy",
     width: "1%",
-    render: (buy) => (
-      <Button type="primary">
-        خرید / فروش
-      </Button>
-    ),
+    render: (buy) => <Button type="primary">خرید / فروش</Button>,
   },
 ];
 

@@ -5,10 +5,7 @@ function Header() {
   return (
     <>
       <Row
-        style={{
-          width: "100%",
-          verticalAlign: "middle",
-        }}
+        className="header-container"
         justify={"space-between"}
         align={"middle"}
         gutter={[16, 16]}
@@ -21,7 +18,16 @@ function Header() {
           </Row>
           <Row justify={"space-between"}>
             <div className="info">
-              توسعه داده شده توسط <span className="name">علی داداش زاده</span>
+              توسعه داده شده توسط{" "}
+              <span className="name">
+                <a
+                  href="https://github.com/mehrshaad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  علی داداش زاده
+                </a>
+              </span>
             </div>
           </Row>
         </Col>

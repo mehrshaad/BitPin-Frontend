@@ -2,9 +2,11 @@
 
 .name-col {
     .coin-icon {
+        place-self: center;
+
         img {
-            height: var(--table-icon-size);
             width: var(--table-icon-size);
+            height: var(--table-icon-size);
         }
     }
 
@@ -20,8 +22,13 @@
         font-weight: 500;
     }
 }
-.ant-table{
-    width: 70vw;
+
+.currency {
+    color: var(--passive-text-color);
+}
+
+.ant-table {
+    min-width: 70vw;
 }
 
 .possitive {

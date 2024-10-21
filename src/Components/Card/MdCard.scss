@@ -2,8 +2,14 @@
 
 .dashboard-card {
     background-color: #e9e9e9;
-    padding: 50px 3vw;
+    padding: 50px;
+    width: auto;
+    display: flex;
+    place-items: center;
     height: max-content;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    @media screen and (max-width: 720px) {
+            padding: 2px;
+        }
 }

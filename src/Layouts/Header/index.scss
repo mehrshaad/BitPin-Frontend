@@ -1,6 +1,11 @@
 @import "../../Assets/Styles/variables.css";
 
 
+.header-container {
+  width: 100%;
+  vertical-align: middle;
+}
+
 .name {
   cursor: pointer;
   background-color: transparent;
