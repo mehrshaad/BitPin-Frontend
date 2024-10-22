@@ -1,0 +1,43 @@
+@import "../../Assets/styles/variables.css";
+
+.name-col {
+    .coin-icon {
+        place-self: center;
+
+        img {
+            width: var(--table-icon-size);
+            height: var(--table-icon-size);
+        }
+    }
+
+    .coin-title {
+        font-size: 1rem;
+        color: var(--primary-text-color);
+        font-weight: 700;
+    }
+
+    .coin-dets {
+        font-size: 0.8rem;
+        color: var(--passive-text-color);
+        font-weight: 500;
+    }
+}
+
+.currency {
+    color: var(--passive-text-color);
+}
+
+.ant-table {
+    // width: 100% !important;
+    width: 100% !important;
+}
+
+.possitive {
+    color: #237804;
+    font-weight: 600;
+}
+
+.negative {
+    font-weight: 600;
+    color: #cf1322;
+}

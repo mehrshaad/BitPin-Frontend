@@ -10,10 +10,16 @@
   font-weight: 800;
   border-bottom: 10px solid rgba(192, 212, 191, 0.6);
   border-radius: 4px;
+  background-color: var(--primary-text-color);
+  background-clip: text;
+  font-size: min(calc(1.5rem + 2vw), 45px);
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
 }
 
 .info {
   color: var(--passive-text-color);
+  font-size: 0.8rem;
 
   .name {
     cursor: pointer;

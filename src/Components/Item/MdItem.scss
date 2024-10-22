@@ -1,0 +1,13 @@
+@import "../../Assets/Styles/variables.css";
+
+.placeholder {
+    animation-delay: .4s;
+    writing-mode: vertical-lr;
+    color: var(--passive-text-color);
+    text-orientation: mixed;
+    margin: 0;
+}
+
+.table-col {
+    animation-delay: 0.5s;
+}

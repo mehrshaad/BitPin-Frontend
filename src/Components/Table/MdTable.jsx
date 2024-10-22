@@ -1,7 +1,7 @@
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Table } from "antd";
 import { queryByRecord } from "../../Utils/QueryProcess.js";
-import ColumnsFa from "./ColumnsFa.jsx";
+import ColumnsFa from "./Columns/ColumnsFa";
 import "./MdTable.scss";
 
 function MdTable({ dataSource }) {

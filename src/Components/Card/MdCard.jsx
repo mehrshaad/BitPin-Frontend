@@ -1,7 +1,11 @@
 import "./MdCard.scss";
 
-function MdCard({ children }) {
-  return <div className="dashboard-card">{children}</div>;
+function MdCard({ children, mode, market = false }) {
+  return (
+    <div className={`dashboard-card${market ? "-market" : ""} ${mode}`}>
+      {children}
+    </div>
+  );
 }
 
 export default MdCard;

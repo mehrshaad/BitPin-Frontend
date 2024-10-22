@@ -1,5 +1,4 @@
 import { Layout } from "antd";
-import React from "react";
 import HeaderContent from "../Header";
 import "./index.scss";
 
@@ -10,7 +9,7 @@ function MainLayout({ children, dir }) {
     <>
       <Layout className="layout" dir={dir}>
         {dashboard && (
-          <Header className="header animate__animated animate__fadeInDown">
+          <Header className="header animate__animated animate__fadeInDown animate__delay-1s">
             <HeaderContent />
           </Header>
         )}

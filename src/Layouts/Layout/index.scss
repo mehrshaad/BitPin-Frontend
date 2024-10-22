@@ -7,14 +7,14 @@
 
 .header {
   background-color: transparent;
-  z-index: 3;
 }
 
 .content {
-  padding-top: 130px;
+  margin-top: 130px;
+  margin-bottom: 20px;
   z-index: 2;
 
-  @media screen and (max-width: 580px) {
-    padding-top: 200px;
-  }
+  // @media screen and (max-width: 580px) {
+  //   margin-top: 200px;
+  // }
 }

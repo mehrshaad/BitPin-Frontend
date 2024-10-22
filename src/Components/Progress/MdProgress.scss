@@ -1,0 +1,20 @@
+@import '../../Assets/styles/variables.css';
+
+.ant-progress-inner {
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+
+    .ant-progress-bg {
+        border-radius: 0px !important;
+
+    }
+}
+
+.ant-progress-layout-bottom {
+    .ant-progress-text {
+        color: var(--primary-text-color) !important;
+        transform: translateY(-26px) !important;
+        // margin-top: -8px !important;
+    }
+
+}

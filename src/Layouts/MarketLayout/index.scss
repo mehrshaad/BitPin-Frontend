@@ -1,0 +1,16 @@
+@import "../../Assets/Styles/variables.css";
+
+body {
+    place-items: start !important;
+    padding-top: 10px;
+}
+
+.market-layout {
+    width: calc(100vw - 20px) !important;
+    height: 100%;
+
+    .market-col {
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+}

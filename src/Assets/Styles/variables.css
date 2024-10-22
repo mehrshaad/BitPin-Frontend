@@ -1,8 +1,15 @@
 :root {
   --primary-background-color: rgb(255, 255, 255);
   --primary-text-color: rgb(0, 0, 0);
-  --passive-text-color: rgb(128, 128, 128);
+  --passive-text-color: rgba(0, 0, 0, 0.6);
   --secondary-text-color: #389e0d;
   --secondary-text-color-light: #95de64;
   --table-icon-size: 35.25px;
+  --card-buy-background-color: rgb(249, 255, 243);
+  --card-sell-background-color: rgb(255, 242, 242);
+  --card-orders-background-color: rgb(233, 239, 255);
+  --progress-buy-background-color: rgba(198, 255, 141, 0.2);
+  --progress-sell-background-color: rgba(255, 167, 167, 0.2);
+  --progress-buy-text-color: rgba(91, 122, 60, 0.9);
+  --progress-sell-text-color: rgba(77, 35, 35, 0.9);
 }

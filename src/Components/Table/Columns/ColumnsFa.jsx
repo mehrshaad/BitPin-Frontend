@@ -1,6 +1,6 @@
 import { Button, Col, Row } from "antd";
-import images from "../../Assets/image.svg";
-import { queryByRecord } from "../../Utils/QueryProcess";
+import images from "../../../Assets/image.svg";
+import { queryByRecord } from "../../../Utils/QueryProcess";
 
 const ColumnsFa = [
   {
