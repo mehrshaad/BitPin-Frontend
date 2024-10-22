@@ -13,8 +13,13 @@
 .ant-progress-layout-bottom {
     .ant-progress-text {
         color: var(--primary-text-color) !important;
-        transform: translateY(-26px) !important;
+        transform: translateY(-30px) !important;
+        width: 100% !important;
         // margin-top: -8px !important;
     }
 
+}
+
+.order-dets{
+    padding: 0 10px;
 }

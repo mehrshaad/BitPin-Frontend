@@ -1,8 +1,7 @@
 import React, { useMemo } from "react";
 import "animate.css";
 import "./MdItem.scss";
-import MdTableTrade from "../Table/MdTableTrade";
-import MdProgress from "../Progress/MdProgress";
+import MdOrders from "../Orders/MdOrders";
 import { Col, Row } from "antd";
 
 function MdItem({ boolean, mode, modes, data, setData }) {
@@ -31,8 +30,8 @@ function MdItem({ boolean, mode, modes, data, setData }) {
             align={"right"}
             className="table-col animate__animated animate__fadeIn"
           >
+            <MdOrders data={data?.orders.slice(0, 15)} mode={mode} />
             {/* <MdTableTrade dataSource={data?.orders.slice(0, 10)} /> */}
-            <MdProgress />
           </Col>
         </Row>
       ) : (
