@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import {
-  fetchCryptoOrdersData,
-  fetchCryptoQueueData,
+    fetchCryptoOrdersData,
+    fetchCryptoQueueData,
 } from "../../../Services/GetApi";
 import { handleQuery } from "../../../Utils/QueryProcess";
 
@@ -26,6 +26,7 @@ function MdOrdersFetchData({ data, setData }) {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
   return null;
 }
 

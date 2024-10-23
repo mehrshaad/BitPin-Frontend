@@ -1,6 +1,23 @@
 @import "../../Assets/styles/variables";
 
-.order-divider{
+.order-divider {
     margin-top: 5px !important;
     margin-bottom: 10px !important;
+
+    &-summary {
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+.summary-col {
+    margin-top: 10px;
+
+    .summary-title {
+        font-weight: 700;
+    }
+
+    .summary-currency {
+        color: var(--passive-text-color);
+    }
 }

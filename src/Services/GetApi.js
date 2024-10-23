@@ -1,7 +1,7 @@
 import axios from "axios";
-import { filterByCurrency2 } from "../Utils/DataPreprocess";
+import { filterByCurrency2, filterById } from "../Utils/DataPreprocess";
 
-export const fetchMarketData = async (currency = "IRT") => {
+export const fetchMarketData = async (currency = "IRT", id) => {
   const API_URL = "https://api.bitpin.org/v1/mkt/markets/";
   try {
     const response = await axios.get(API_URL, {
@@ -11,6 +11,10 @@ export const fetchMarketData = async (currency = "IRT") => {
         Accept: "application/json",
       },
     });
+    if (!isNaN(id)) {
+      const coinData = await filterById(response.data.results, id);
+      return coinData;
+    }
     const filteredData = await filterByCurrency2(
       response.data.results,
       currency

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import MdCard from "../../Components/Card/MdCard";
 import MdItem from "../../Components/Item/MdItem";
 import { modeHandler } from "../../Utils/ModeHandler";
+import MarketLayoutHeader from "./Header";
 import "./index.scss";
 
 function MarketLayout({ data }) {
@@ -11,11 +12,21 @@ function MarketLayout({ data }) {
     window.innerWidth > 1200 ? modes[0] : modes[3]
   );
   useEffect(() => {
-    setMode(window.innerWidth > 1200 ? modes[0] : modes[3]);
+    setMode(
+      window.innerWidth > 1200 || window.innerWidth < 850 ? modes[0] : modes[3]
+    );
   }, [window.innerWidth]);
+
   return (
     <>
       <Row gutter={[16, 16]} className="market-layout" justify={"center"}>
+        <Row gutter={[16, 16]} className="market-layout" justify={"center"}>
+          <Col span={24}>
+            <MdCard market={true} mode={"header"}>
+              <MarketLayoutHeader />
+            </MdCard>
+          </Col>
+        </Row>
         {[modes[1], modes[3], modes[2]].map((currentMode, index) => (
           <Col
             key={index}
