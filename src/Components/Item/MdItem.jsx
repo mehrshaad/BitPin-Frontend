@@ -4,7 +4,7 @@ import "./MdItem.scss";
 import MdOrders from "../Orders/MdOrders";
 import { Col, Row } from "antd";
 
-function MdItem({ boolean, mode, modes, data, setData }) {
+function MdItem({ boolean, mode, modes, data }) {
   const text = useMemo(() => {
     if (mode === modes[1]) {
       return "سفارشات فروش";
@@ -13,7 +13,6 @@ function MdItem({ boolean, mode, modes, data, setData }) {
     }
     return "معاملات";
   }, [mode, modes]);
-  console.log(data);
   return (
     <>
       {boolean ? (
@@ -30,8 +29,7 @@ function MdItem({ boolean, mode, modes, data, setData }) {
             align={"right"}
             className="table-col animate__animated animate__fadeIn"
           >
-            <MdOrders data={data?.orders.slice(0, 15)} mode={mode} />
-            {/* <MdTableTrade dataSource={data?.orders.slice(0, 10)} /> */}
+            <MdOrders dataSource={data} mode={mode} />
           </Col>
         </Row>
       ) : (
@@ -41,4 +39,4 @@ function MdItem({ boolean, mode, modes, data, setData }) {
   );
 }
 
-export default React.memo(MdItem);
+export default MdItem;

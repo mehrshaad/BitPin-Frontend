@@ -13,13 +13,22 @@
 .ant-progress-layout-bottom {
     .ant-progress-text {
         color: var(--primary-text-color) !important;
-        transform: translateY(-30px) !important;
+        opacity: 0.7;
+        transform: translateY(-27px) !important;
         width: 100% !important;
-        // margin-top: -8px !important;
+        margin: 0 !important;
     }
 
 }
 
-.order-dets{
+.order-dets {
     padding: 0 10px;
+
+    .order-price-sell {
+        color: red;
+    }
+
+    .order-price-buy {
+        color: green;
+    }
 }

@@ -1,29 +1,22 @@
 import { Col, Row } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MdCard from "../../Components/Card/MdCard";
 import MdItem from "../../Components/Item/MdItem";
 import { modeHandler } from "../../Utils/ModeHandler";
 import "./index.scss";
 
-function MarketLayout({
-  queueData,
-  setQueueData,
-  buyData,
-  setBuyData,
-  sellData,
-  setSellData,
-}) {
+function MarketLayout({ data }) {
   const [modes] = useState(["all", "sell", "buy", "orders"]);
-  const [modesMapper] = useState({
-    sell: [sellData, setSellData],
-    buy: [buyData, setBuyData],
-    orders: [queueData, setQueueData],
-  });
-  const [mode, setMode] = useState(modes[0]);
+  const [mode, setMode] = useState(
+    window.innerWidth > 1200 ? modes[0] : modes[3]
+  );
+  useEffect(() => {
+    setMode(window.innerWidth > 1200 ? modes[0] : modes[3]);
+  }, [window.innerWidth]);
   return (
     <>
-      <Row gutter={[16, 16]} className="market-layout">
-        {modes.slice(1, 4).map((currentMode, index) => (
+      <Row gutter={[16, 16]} className="market-layout" justify={"center"}>
+        {[modes[1], modes[3], modes[2]].map((currentMode, index) => (
           <Col
             key={index}
             className="market-col"
@@ -35,8 +28,7 @@ function MarketLayout({
                 boolean={mode === currentMode || mode === modes[0]}
                 mode={currentMode}
                 modes={modes}
-                data={modesMapper[currentMode][0]}
-                setData={modesMapper[currentMode][1]}
+                data={data}
               />
             </MdCard>
           </Col>

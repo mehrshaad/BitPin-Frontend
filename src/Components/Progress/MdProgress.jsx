@@ -1,7 +1,7 @@
 import { Flex, Progress, Row, Col } from "antd";
 import "./MdProgress.scss";
 
-function MdProgress({ percent = 100, mode = "buy", items = ["a", "b", "c"] }) {
+function MdProgress({ percent = 100, mode = "buy", items = ["1", "2", "3"] }) {
   return (
     <Flex gap="small" vertical>
       <Progress
@@ -17,8 +17,8 @@ function MdProgress({ percent = 100, mode = "buy", items = ["a", "b", "c"] }) {
             align={"middle"}
             justify={"space-between"}
           >
-            <Col span={8} align={"right"}>
-              {items[0]}
+            <Col span={8} align={"right"} className={`order-price-${mode}`}>
+              {Number(items[0]).toLocaleString()}
             </Col>
             <Col span={8} align={"center"}>
               {items[1]}
