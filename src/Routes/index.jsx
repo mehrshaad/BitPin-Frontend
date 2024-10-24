@@ -6,9 +6,12 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/BitPin-Frontend-Task/" element={<Dashboard />} />
+        <Route path="/BitPin-Frontend-Task" element={<Dashboard />} />
         <Route path="/BitPin-Frontend-Task/trade/*" element={<Trade />} />
-        <Route path="/BitPin-Frontend-Task/*" element={<Navigate to="/" />} />
+        <Route
+          path="/*"
+          element={<Navigate to="/BitPin-Frontend-Task" />}
+        />
       </Routes>
     </BrowserRouter>
   );

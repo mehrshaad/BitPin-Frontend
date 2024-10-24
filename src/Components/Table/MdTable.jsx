@@ -1,10 +1,12 @@
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Table } from "antd";
+import { useNavigate } from "react-router-dom";
 import { queryByRecord } from "../../Utils/QueryProcess.js";
 import ColumnsFa from "./Column/ColumnsFa";
 import "./MdTable.scss";
 
 function MdTable({ dataSource }) {
+  const navigate = useNavigate();
   return (
     <>
       <Table
@@ -12,7 +14,9 @@ function MdTable({ dataSource }) {
         onRow={(record) => {
           return {
             onClick: () => {
-              window.location.href = `/trade?record=${queryByRecord(record)}`;
+              navigate(
+                `/BitPin-Frontend-Task/trade?record=${queryByRecord(record)}`
+              );
             },
           };
         }}

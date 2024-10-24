@@ -1,6 +1,9 @@
 import { Button, Col, Row } from "antd";
+import { useNavigate } from "react-router-dom";
 import images from "../../../Assets/image.svg";
 import { queryByRecord } from "../../../Utils/QueryProcess";
+
+const navigate = useNavigate();
 
 const ColumnsFa = [
   {
@@ -68,7 +71,9 @@ const ColumnsFa = [
     render: (_, record) => (
       <Button
         onClick={() => {
-          window.location.href = `/trade?record=${queryByRecord(record)}`;
+          navigate(
+            `/BitPin-Frontend-Task/trade?record=${queryByRecord(record)}`
+          );
         }}
         type="primary"
       >

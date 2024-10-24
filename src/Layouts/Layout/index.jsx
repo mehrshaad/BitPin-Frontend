@@ -4,7 +4,7 @@ import "./index.scss";
 
 function MainLayout({ children, dir }) {
   const { Header, Content } = Layout;
-  const dashboard = !window.location.href.includes("trade");
+  const dashboard = !window.location.href.includes("trade?record");
   return (
     <>
       <Layout className="layout" dir={dir}>
