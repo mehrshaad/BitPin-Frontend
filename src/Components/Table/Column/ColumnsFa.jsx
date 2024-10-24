@@ -39,7 +39,7 @@ const ColumnsFa = [
     dataIndex: "price_info",
     key: "price_info",
     render: (price_info, record) => (
-      <span dir="ltr">
+      <span dir="ltr" className="price">
         <b>{parseFloat(price_info.price).toLocaleString()}</b>{" "}
         <span className="currency">{record.currency2.code}</span>
       </span>

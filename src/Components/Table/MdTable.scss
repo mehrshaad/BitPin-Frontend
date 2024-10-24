@@ -21,20 +21,24 @@
     }
 }
 
+.price {
+    color: var(--primary-text-color);
+}
+
 .currency {
     color: var(--passive-text-color);
 }
 
 .ant-table {
-    min-width: 70vw;
+    min-width: min(70vw, 1000px);
 }
 
 .possitive {
-    color: #237804;
+    color: var(--green);
     font-weight: 600;
 }
 
 .negative {
     font-weight: 600;
-    color: #cf1322;
+    color: var(--red);
 }

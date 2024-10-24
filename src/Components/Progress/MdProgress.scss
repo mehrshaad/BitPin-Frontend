@@ -1,6 +1,6 @@
 .ant-progress-inner {
     border-radius: 8px !important;
-    background: rgba(255, 255, 255, 0.3) !important;
+    background: var(--progress-inner-background-color) !important;
 
     .ant-progress-bg {
         border-radius: 0px !important;
@@ -23,10 +23,10 @@
     padding: 0 10px;
 
     .order-price-sell {
-        color: red;
+        color: var(--red);
     }
 
     .order-price-buy {
-        color: green;
+        color: var(--green);
     }
 }

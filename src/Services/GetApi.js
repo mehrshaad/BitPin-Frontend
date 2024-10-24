@@ -21,8 +21,8 @@ export const fetchMarketData = async (currency = "IRT", id) => {
     );
     return filteredData;
   } catch (error) {
-    alert("اتصال به اینترنت را بررسی کنید");
-    console.log(error)
+    // alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error);
     return [];
   }
 };
@@ -39,8 +39,8 @@ export const fetchCryptoQueueData = async (id) => {
     });
     return response.data;
   } catch (error) {
-    alert("اتصال به اینترنت را بررسی کنید");
-    console.log(error)
+    // alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error);
     return [];
   }
 };
@@ -57,8 +57,8 @@ export const fetchCryptoOrdersData = async (id, type) => {
     });
     return response.data;
   } catch (error) {
-    alert("اتصال به اینترنت را بررسی کنید");
-    console.log(error)
+    // alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error);
     return [];
   }
 };
