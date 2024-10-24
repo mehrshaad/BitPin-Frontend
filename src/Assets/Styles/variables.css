@@ -7,6 +7,7 @@
   --header-border-color: rgba(192, 212, 191, 0.6);
   --header-shadow-color: rgba(255, 255, 255, 0.4);
   --button-background-color: #57a928;
+  --button-hover-background-color: #286802;
   --table-icon-size: 35.25px;
   --table-header-background-color: #fafafa;
   --table-row-background-color: #ffffff;
@@ -41,6 +42,7 @@
     --header-border-color: rgba(61, 72, 60, 0.6);
     --header-shadow-color: rgba(134, 134, 134, 0.4);
     --button-background-color: #286802;
+    --button-hover-background-color: #57a928;
     --table-header-background-color: #303030;
     --table-row-background-color: #1e1e1e;
     --table-row-hover-background-color: #303030;
