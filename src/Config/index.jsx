@@ -11,7 +11,6 @@ function Config({ children }) {
         components: {
           Button: {
             colorPrimary: "var(--button-background-color)",
-            colorText: "var(--primary-text-color)",
           },
           Table: {
             borderColor: "var(--button-background-color)",
