@@ -9,6 +9,7 @@ export const fetchMarketData = async (currency = "IRT", id) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     });
     if (!isNaN(id)) {
@@ -35,6 +36,7 @@ export const fetchCryptoQueueData = async (id) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     });
     return response.data;
@@ -53,6 +55,7 @@ export const fetchCryptoOrdersData = async (id, type) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     });
     return response.data;
