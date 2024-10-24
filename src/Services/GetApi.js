@@ -21,7 +21,9 @@ export const fetchMarketData = async (currency = "IRT", id) => {
     );
     return filteredData;
   } catch (error) {
-    return console.log(error);
+    alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error)
+    return [];
   }
 };
 
@@ -29,7 +31,7 @@ export const fetchCryptoQueueData = async (id) => {
   const API_URL = `https://api.bitpin.org/v1/mth/matches/${id}/`;
   try {
     const response = await axios.get(API_URL, {
-      timeout: 3000,
+      // timeout: 3000,
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -37,7 +39,9 @@ export const fetchCryptoQueueData = async (id) => {
     });
     return response.data;
   } catch (error) {
-    return console.log(error);
+    alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error)
+    return [];
   }
 };
 
@@ -45,7 +49,7 @@ export const fetchCryptoOrdersData = async (id, type) => {
   const API_URL = `https://api.bitpin.org/v2/mth/actives/${id}/?type=${type}`;
   try {
     const response = await axios.get(API_URL, {
-      timeout: 3000,
+      // timeout: 3000,
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -53,6 +57,8 @@ export const fetchCryptoOrdersData = async (id, type) => {
     });
     return response.data;
   } catch (error) {
-    return console.log(error);
+    alert("اتصال به اینترنت را بررسی کنید");
+    console.log(error)
+    return [];
   }
 };
