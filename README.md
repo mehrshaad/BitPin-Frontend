@@ -9,6 +9,7 @@ A modern React-based frontend implementation for BitPin Company's cryptocurrency
 - Responsive design
 - Modern UI components with Ant Design
 - Animated transitions and loading states
+- System-based light/dark mode support
 
 ## Getting Started
 
