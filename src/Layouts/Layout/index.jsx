@@ -1,10 +1,14 @@
 import { Layout } from "antd";
+import { useEffect, useState } from "react";
 import HeaderContent from "../Header";
 import "./index.scss";
 
 function MainLayout({ children, dir }) {
   const { Header, Content } = Layout;
-  const dashboard = !window.location.href.includes("trade?record");
+  const [dashboard, setDashboard] = useState(true);
+  useEffect(() => {
+    setDashboard(!window.location.href.includes("trade?record"));
+  }, [window.location.href]);
   return (
     <>
       <Layout className="layout" dir={dir}>
