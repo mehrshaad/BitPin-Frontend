@@ -23,7 +23,7 @@ function MdTable({ dataSource }) {
         scroll={{ x: true, scrollToFirstRowOnChange: true }}
         columns={ColumnsFa}
         pagination={{
-          pageSize: 10,
+          defaultPageSize: 10,
           nextIcon: <LeftOutlined />,
           prevIcon: <RightOutlined />,
           pageSizeOptions: [5, 10, 20, 50],
