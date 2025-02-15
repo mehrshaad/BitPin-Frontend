@@ -1,6 +1,6 @@
-# BitPin Market Frontend Task
+# BitPin Market Frontend
 
-A modern React-based frontend implementation for BitPin Company's cryptocurrency market interface.
+The BitPin Market Frontend is a modern cryptocurrency trading interface built using React, designed for seamless real-time market data visualization and interactive trading. Featuring a sleek and responsive UI powered by Ant Design, the platform includes animated transitions, intuitive navigation, and a system-based light/dark mode for an optimized user experience. With real-time updates and a smooth trading interface, this project showcases a well-structured front-end architecture tailored for dynamic financial applications. Built with React.js, Vite, and Axios, it ensures high performance and efficient data handling.
 
 ## Features
 
