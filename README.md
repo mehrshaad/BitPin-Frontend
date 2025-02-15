@@ -148,7 +148,7 @@ Developed in Fall 2024
 
 #### Connect with me
 
-- 💻 [GitHub](https://github.com/siddharth-kumar-singh)
+- 💻 [GitHub](https://github.com/mehrshaad)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/dadashzadeh-ali/)
 - 📸 [Instagram](https://www.instagram.com/mehrshaad.dz/)
 - 📧 [Email](mailto:alidadashzadeh2079@gmail.com)
